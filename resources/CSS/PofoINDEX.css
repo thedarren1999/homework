@@ -1,0 +1,72 @@
+body{
+  background:rgb(182, 181, 181);
+  background-size: cover;
+  font-family: arial;
+  color: rgb(2, 0, 0);
+}
+
+
+.grid-container{
+  display: grid;
+  width: 950px;
+  margin: auto;
+  height: 1fr;
+  border: 5px solid whitesmoke;
+  background:white;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 200px 200px ;
+  justify-content: center;
+  align-content: start; 
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-gap: 10px 20px;
+ 
+}
+
+/* -----------im seperate line----------------im seperate line-------------------------------im seperate line----------------im seperate line-------------------- */
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+/* -----------im seperate line----------------im seperate line-------------------------------im seperate line----------------im seperate line---------------------- */
+
+
+.grid-item{
+  background-color: white;
+  border:4px solid white);
+  padding: 1em;/*padding = area between top&left and Contents */
+  height: auto;
+  grid-row: auto;
+
+  /*width: 945px;
+  font-family: arial;
+  color: green; */
+}
+
+
+.info{
+  grid-area: 1/1/3/2 ;
+}
+.profiles{
+  grid-area: 3/1/8/2;
+}
+.computingskills{
+  grid-area: 8/1/11/2 ;
+}
+.languages{
+  grid-area: 11/1/16/2 ;
+} 
+.education{
+  grid-area: 1/2/2/4 ; 
+}
+.projects{
+  grid-area: 2/2/6/4 ; /*how to fix this <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<2/2/?/4? */
+}
+.workexperiences{
+  grid-area: 6/2/10/4 ;
+}
+.awards{
+  grid-area: 10/2/14/4 ;
+}
